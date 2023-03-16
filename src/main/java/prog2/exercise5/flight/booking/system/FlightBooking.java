@@ -71,22 +71,19 @@ public class FlightBooking {
         if (i == "1")
         {
             tripSource = TripSource.NANJING;
-            sourceAirport = "Nanjing Lukou International Airport";
         }
         if (i == "2")
         {
             tripSource = TripSource.BEIJING;
-            sourceAirport = "Beijing Capital International Airport";
+             
         }
         if (i =="3")
         {
             tripSource = TripSource.SHANGHAI;
-            sourceAirport = "Shanghai Pudong International Airport";
         }
         if (i =="4")
         {
             tripSource = TripSource.OULU;
-            sourceAirport = "Oulu Airport";
         }
     }
     public TripSource getTripSource() {
@@ -213,9 +210,39 @@ public String getFlightCompany(){
 }
 
 public void setSourceAirport(String i){
+    switch (i)
+    {
+        case "1":
+        sourceAirport = "Nanjing Lukou International Airport";
+        break;
+        case "2":
+        sourceAirport = "Beijing Capital International Airport";
+        break;
+        case "3":
+        sourceAirport = "Shanghai Pudong International Airport";
+        break;
+        case"4":
+        sourceAirport = "Oulu Airport";
+        break;
 
+    }
 }
 public void setDestinationAirport(String i, String j){
+    switch (j)
+    {
+        case"1":
+        DestinationAirport = "Nanjing Lukou International Airport";
+        break;
+        case"2":
+        DestinationAirport = "Beijing Capital International Airport";
+        break;
+        case"3":
+        DestinationAirport = "Shanghai Pudong International Airport";
+        break;
+        case"4":
+        DestinationAirport = "Oulu Airport";
+        break;
+    }
 
 }
 
