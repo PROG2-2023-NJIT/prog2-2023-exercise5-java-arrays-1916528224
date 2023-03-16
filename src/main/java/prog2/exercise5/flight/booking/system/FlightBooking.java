@@ -89,7 +89,6 @@ public class FlightBooking {
     public TripSource getTripSource() {
         return tripSource;
     }
-
     public void setTripType(String i){
         if (i == "1")
         {
