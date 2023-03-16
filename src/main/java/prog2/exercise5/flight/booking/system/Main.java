@@ -33,41 +33,13 @@ public class Main
     int q = input.nextInt();
 
 
-    FlightBooking fb = new FlightBooking("null", depart, returnDate, 2, 3);
-    fb.setPassengerFullName(k);
-    String passengerFullname = fb.getPassengerFullName();
-    fb.setChildrenPassengers(b);
-    int ChildrenPassengers = fb.getChildrenPassengers();
-    fb.setAdultPassengers(a);
-    int AdultPassengers = fb.getAdultPassengers();
-    fb.setTotalPassengers(AdultPassengers , ChildrenPassengers);
-    int totalPassengers = fb.getTotalPassengers();
+ 
+ 
+  
      
    
  
-    String ticketNumber = fb.getTicketNumber();
-    double TotalTicketPrice = fb.getTotalTicketPrice();
-    double returnTicketPrice = fb.getreturnTicketPrice();
-    double departingTicketPrice = fb.getTotalTicketPrice();
-    String TripDestination = fb.gettripDestination().toString();
-    String sourceAirport = fb.getsourceAirport();
-    String tripSource=fb.getTripSource().toString();
-    System.out.println(tripSource);
-    String FlightCompany = fb.getFlightCompany();
-     
-     
-
-
-
-
-    System.out.println("Dear " + passengerFullname + ". Thank you for booking your flight with " + 
-    fb.getFlightCompany() + ". Following are the details of your booking and the trip:" + "\n" + 
-    "Ticket Number: " + fb.getTicketNumber() + "\n" + 
-    "From " + fb.getTripSource() + " to " + fb.gettripDestination() + "\n" +
-    "Date of departure: " + fb.getDepartingDate() + "\n" +
-    "Date of return: " + fb.getReturnDate() + "\n" +
-    "Total passengers: " + fb.getTotalPassengers() + "\n" +
-    "Total ticket price in Euros: " + fb.getTotalTicketPrice());
+    
 }
 
     }
